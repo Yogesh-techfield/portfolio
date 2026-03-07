@@ -1,1 +1,1 @@
-localhost3000 https://portfoliogj.lovable.app/
+ https://portfoliogj.lovable.app/
