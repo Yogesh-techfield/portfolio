@@ -6,24 +6,27 @@
     <title>Yogesh Malik | Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Yogesh Malik with resume, project files, certificates, and clickable contact links."
+      content="Interactive portfolio of Yogesh Malik with projects, certificates, resume, and openable files."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="#home">
           <span class="brand-mark">YM</span>
           <span class="brand-copy">
             <strong>Yogesh Malik</strong>
-            <small>Portfolio</small>
+            <small>Interactive Portfolio</small>
           </span>
         </a>
 
@@ -45,16 +48,16 @@
       <main>
         <section class="hero section" id="home">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Computer Science Student • Dashboard Builder • Web Project Learner</p>
-            <h1>Real work, real files, and clickable proof in one portfolio.</h1>
+            <p class="eyebrow">Portfolio inspired by modern developer showcases</p>
+            <h1>Interactive work, real certificates, and files that open instantly.</h1>
             <p class="hero-text">
-              I am Yogesh Malik, a B.Tech CSE student at Lovely Professional University. This
-              portfolio now includes my resume, project files, certificates, and direct links so
-              recruiters can open everything quickly.
+              I am Yogesh Malik, a Computer Science student at Lovely Professional University. This
+              portfolio brings together my dashboards, internship work, certificates, resume, and
+              project files in one cleaner and more interactive experience.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#projects">Explore Projects</a>
+              <a class="button button-primary" href="#projects">Explore Work</a>
               <a
                 class="button button-secondary"
                 href="./assets/resume/yogesh-malik-resume.pdf"
@@ -87,123 +90,155 @@
               </a>
             </div>
 
-            <ul class="hero-stats">
-              <li>
-                <strong>3</strong>
-                <span>Featured Projects</span>
-              </li>
-              <li>
+            <div class="hero-metrics">
+              <article>
+                <strong>4</strong>
+                <span>Project entries</span>
+              </article>
+              <article>
                 <strong>3+</strong>
-                <span>Certificates Hosted</span>
-              </li>
-              <li>
+                <span>Certificates hosted</span>
+              </article>
+              <article>
                 <strong>50+</strong>
-                <span>LeetCode Streak</span>
-              </li>
-            </ul>
+                <span>LeetCode streak</span>
+              </article>
+            </div>
           </div>
 
-          <div class="hero-card reveal">
-            <div class="portrait-frame portrait-photo-frame">
-              <img src="./assets/profile-photo.jpg" alt="Photo of Yogesh Malik" />
-            </div>
-            <div class="profile-quick">
-              <div>
-                <p class="quick-label">Location</p>
-                <p>Punjab, India</p>
+          <div class="hero-visual reveal">
+            <article class="spotlight-card profile-card">
+              <div class="portrait-frame portrait-photo-frame">
+                <img src="./assets/profile-photo.jpg" alt="Photo of Yogesh Malik" />
               </div>
-              <div>
-                <p class="quick-label">Phone</p>
-                <p><a href="tel:+918307607339">+91 8307607339</a></p>
+              <div class="profile-details">
+                <div>
+                  <p class="meta-label">Focus</p>
+                  <p>Web, dashboards, and practical portfolio work</p>
+                </div>
+                <div>
+                  <p class="meta-label">Email</p>
+                  <p><a href="mailto:ym822963@gmail.com">ym822963@gmail.com</a></p>
+                </div>
+                <div>
+                  <p class="meta-label">Phone</p>
+                  <p><a href="tel:+918307607339">+91 8307607339</a></p>
+                </div>
               </div>
-              <div>
-                <p class="quick-label">Email</p>
-                <p><a href="mailto:ym822963@gmail.com">ym822963@gmail.com</a></p>
-              </div>
-            </div>
+            </article>
           </div>
         </section>
 
-        <section class="section about-grid" id="about">
-          <div class="section-heading reveal">
-            <p class="eyebrow">About Me</p>
-            <h2>Focused on practical work that can be opened, checked, and verified.</h2>
-          </div>
-
-          <div class="about-card reveal">
+        <section class="section intro-panels" id="about">
+          <article class="spotlight-card reveal">
+            <p class="eyebrow">About</p>
+            <h2>Practical work with direct proof.</h2>
             <p>
-              I am currently pursuing my Bachelor of Technology in Computer Science and
-              Engineering at Lovely Professional University with a CGPA of 7.0. I enjoy combining
-              presentation, logic, and structured data to build useful student and portfolio
-              projects.
+              I am pursuing B.Tech in Computer Science and Engineering at Lovely Professional
+              University with a CGPA of 7.0. I enjoy building polished portfolio pieces with
+              usable data, clean presentation, and direct file access.
             </p>
-            <p>
-              My current portfolio highlights my real Amazon sales dashboard files, my creative
-              writing coach chatbot work, internship details, certificate proofs, and a direct
-              resume link for faster review.
-            </p>
-          </div>
+          </article>
 
-          <div class="highlight-card reveal">
-            <p class="card-title">Openable Links Included</p>
-            <ul class="list">
-              <li>Resume opens directly in a new tab</li>
-              <li>Project cards include files, screenshots, and source bundles</li>
-              <li>Certificates can be opened directly from the live website</li>
-            </ul>
-          </div>
+          <article class="spotlight-card reveal">
+            <p class="eyebrow">What Changed</p>
+            <h2>Cleaner structure and stronger interaction.</h2>
+            <p>
+              This version adds clickable tabs in skills, improved hero styling, more layered
+              project cards, hosted project files, certificate previews, and faster access to your
+              resume and work samples.
+            </p>
+          </article>
         </section>
 
         <section class="section" id="skills">
           <div class="section-heading reveal">
             <p class="eyebrow">Skills</p>
-            <h2>Tools and technologies I actively use in projects.</h2>
+            <h2>Tabbed skill groups like modern portfolio sections.</h2>
           </div>
 
-          <div class="skills-grid">
-            <article class="skill-card reveal">
-              <h3>Languages</h3>
-              <p>C++, JavaScript, C, Python, Java</p>
-            </article>
-            <article class="skill-card reveal">
-              <h3>Frontend and Data</h3>
-              <p>HTML, CSS, NumPy, Pandas, Matplotlib, Seaborn</p>
-            </article>
-            <article class="skill-card reveal">
-              <h3>Platforms and Tools</h3>
-              <p>Power BI, Excel, MySQL, Node.js, Tableau</p>
-            </article>
-            <article class="skill-card reveal">
-              <h3>Strengths</h3>
-              <p>Problem Solving, Teamwork, Critical Thinking, Fast Learning</p>
-            </article>
+          <div class="skills-shell reveal">
+            <div class="skill-tabs" role="tablist" aria-label="Skill tabs">
+              <button class="skill-tab is-active" type="button" data-tab="languages">Languages</button>
+              <button class="skill-tab" type="button" data-tab="frontend">Frontend & Data</button>
+              <button class="skill-tab" type="button" data-tab="tools">Tools</button>
+              <button class="skill-tab" type="button" data-tab="strengths">Strengths</button>
+            </div>
+
+            <div class="skill-panels">
+              <article class="skill-panel is-active" data-panel="languages">
+                <h3>Programming Languages</h3>
+                <p>C++, JavaScript, C, Python, Java</p>
+                <ul class="chip-row">
+                  <li>C++</li>
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                  <li>Java</li>
+                </ul>
+              </article>
+
+              <article class="skill-panel" data-panel="frontend">
+                <h3>Frontend and Data Foundations</h3>
+                <p>HTML, CSS, NumPy, Pandas, Matplotlib, Seaborn</p>
+                <ul class="chip-row">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Pandas</li>
+                  <li>Matplotlib</li>
+                </ul>
+              </article>
+
+              <article class="skill-panel" data-panel="tools">
+                <h3>Tools and Platforms</h3>
+                <p>Power BI, Excel, MySQL, Node.js, Tableau</p>
+                <ul class="chip-row">
+                  <li>Power BI</li>
+                  <li>Excel</li>
+                  <li>MySQL</li>
+                  <li>Node.js</li>
+                </ul>
+              </article>
+
+              <article class="skill-panel" data-panel="strengths">
+                <h3>Working Style</h3>
+                <p>Problem Solving, Teamwork, Critical Thinking, Fast Learning</p>
+                <ul class="chip-row">
+                  <li>Problem Solving</li>
+                  <li>Critical Thinking</li>
+                  <li>Teamwork</li>
+                  <li>Consistency</li>
+                </ul>
+              </article>
+            </div>
           </div>
         </section>
 
-        <section class="section timeline-section" id="experience">
+        <section class="section" id="experience">
           <div class="section-heading reveal">
             <p class="eyebrow">Experience</p>
-            <h2>Internship experience backed by actual certificate proof.</h2>
+            <h2>Internship entries with certificate-backed context.</h2>
           </div>
 
           <div class="timeline">
             <article class="timeline-card reveal">
-              <span class="timeline-date">July 2025 - September 2025</span>
-              <h3>Sparkiit.net Private Limited</h3>
-              <p class="timeline-role">Full Stack Web Development Intern</p>
+              <span class="timeline-date">July 11, 2025 - August 12, 2025</span>
+              <h3>Sparkiit Full Stack Web Development Internship</h3>
+              <p class="timeline-role">Internship completed</p>
               <p>
-                Worked on web development tasks and hands-on learning around structured application
-                building, frontend work, and practical development exposure.
+                Full Stack Web Development internship entry added to the portfolio. I could not
+                find the actual Sparkiit certificate file on disk in this pass, so the experience
+                is shown now and the direct certificate image link can be added as soon as the file
+                is available locally.
               </p>
             </article>
 
             <article class="timeline-card reveal">
               <span class="timeline-date">February 1, 2024 - March 21, 2024</span>
               <h3>1Stop Artificial Intelligence Internship</h3>
-              <p class="timeline-role">Internship Certificate Available</p>
+              <p class="timeline-role">Certificate hosted</p>
               <p>
-                Completed the Artificial Intelligence internship program and added the certificate
-                directly to this portfolio so it can be opened and verified easily.
+                Artificial Intelligence internship certificate hosted directly in the portfolio for
+                quick viewing and verification access.
               </p>
               <p class="timeline-stack">
                 <a
@@ -212,7 +247,7 @@
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Open certificate
+                  Open 1Stop certificate
                 </a>
               </p>
             </article>
@@ -222,102 +257,59 @@
         <section class="section" id="projects">
           <div class="section-heading reveal">
             <p class="eyebrow">Projects</p>
-            <h2>Only real projects are shown here, with files you can actually open.</h2>
+            <h2>Project cards with layered visuals and real downloadable files.</h2>
           </div>
 
-          <div class="projects-grid project-showcase">
+          <div class="projects-grid">
             <article class="project-card reveal">
               <img
                 class="project-image"
                 src="./assets/projects/amazon-dashboard.png"
-                alt="Amazon sales dashboard preview"
+                alt="Amazon dashboard preview"
               />
-              <div class="project-tag">Excel Dashboard</div>
-              <h3>Amazon Sales Dashboard</h3>
-              <p>
-                Interactive dashboard work based on Amazon sales data. This section includes the
-                dataset and dashboard screenshots so the project can be reviewed directly.
-              </p>
-              <ul class="project-meta">
-                <li>Excel</li>
-                <li>Dashboarding</li>
-                <li>Data Visualization</li>
-              </ul>
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="./assets/projects/amazon-sales-data.xlsx"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Excel File
-                </a>
-                <a
-                  class="project-link"
-                  href="./assets/projects/amazon-dashboard.png"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Dashboard
-                </a>
-                <a
-                  class="project-link"
-                  href="./assets/projects/amazon-dashboard-detail.png"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Detail View
-                </a>
+              <div class="project-body">
+                <p class="project-tag">Excel Dashboard</p>
+                <h3>Amazon Sales Dashboard</h3>
+                <p>
+                  Dashboard work based on Amazon sales data with hosted Excel and screenshot files
+                  for direct review.
+                </p>
+                <ul class="project-meta">
+                  <li>Excel</li>
+                  <li>Visualization</li>
+                  <li>Sales Data</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="project-link" href="./assets/projects/amazon-sales-data.xlsx" target="_blank" rel="noreferrer">Open Excel</a>
+                  <a class="project-link" href="./assets/projects/amazon-dashboard.png" target="_blank" rel="noreferrer">Open Preview</a>
+                  <a class="project-link" href="./assets/projects/amazon-dashboard-detail.png" target="_blank" rel="noreferrer">Detail View</a>
+                </div>
               </div>
             </article>
 
             <article class="project-card reveal accent-card">
-              <div class="stacked-preview">
-                <div class="project-preview-copy">
-                  <p class="preview-kicker">Interactive Web Prototype</p>
-                  <h4>Creative Writing Coach Chatbot</h4>
-                  <p>
-                    Hosted with the project interface files and a downloadable source bundle from
-                    your local project folder.
-                  </p>
-                </div>
+              <div class="project-art project-copy-art">
+                <p class="eyebrow">Interactive Web Prototype</p>
+                <h3>Creative Writing Coach Chatbot</h3>
+                <p>Hosted interface pages plus a downloadable source bundle.</p>
               </div>
-              <div class="project-tag">Chatbot Project</div>
-              <h3>Creative Writing Coach Chatbot</h3>
-              <p>
-                Replaced the placeholder projects with your actual chatbot work. The live site now
-                links to the hosted interface pages and a downloadable source zip.
-              </p>
-              <ul class="project-meta">
-                <li>HTML</li>
-                <li>Node.js</li>
-                <li>AI-assisted interface</li>
-              </ul>
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="./assets/projects/creative-writing-coach/index.html"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Project Page
-                </a>
-                <a
-                  class="project-link"
-                  href="./assets/projects/creative-writing-coach/user.html"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open User Flow
-                </a>
-                <a
-                  class="project-link"
-                  href="./assets/projects/creative-writing-coach-source.zip"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Download Source
-                </a>
+              <div class="project-body">
+                <p class="project-tag">Chatbot Project</p>
+                <h3>Creative Writing Coach Chatbot</h3>
+                <p>
+                  Project files from your local folder are hosted here so visitors can open the UI
+                  directly or download the source package.
+                </p>
+                <ul class="project-meta">
+                  <li>HTML</li>
+                  <li>Node.js</li>
+                  <li>AI Interface</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="project-link" href="./assets/projects/creative-writing-coach/index.html" target="_blank" rel="noreferrer">Open Project</a>
+                  <a class="project-link" href="./assets/projects/creative-writing-coach/user.html" target="_blank" rel="noreferrer">User Flow</a>
+                  <a class="project-link" href="./assets/projects/creative-writing-coach-source.zip" target="_blank" rel="noreferrer">Download Source</a>
+                </div>
               </div>
             </article>
 
@@ -325,36 +317,49 @@
               <img
                 class="project-image"
                 src="./assets/projects/power-bi-dashboard-cover.png"
-                alt="Power BI dashboard cover preview"
+                alt="Power BI dashboard cover"
               />
-              <div class="project-tag">Power BI Dashboard</div>
-              <h3>Interactive Dashboard File</h3>
-              <p>
-                Added the Power BI dashboard file you shared so it can be opened directly from the
-                portfolio as another real dashboard project asset.
-              </p>
-              <ul class="project-meta">
-                <li>Power BI</li>
-                <li>Business Intelligence</li>
-                <li>Data Storytelling</li>
-              </ul>
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="./assets/projects/power-bi-dashboard.pbix"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open PBIX File
-                </a>
-                <a
-                  class="project-link"
-                  href="./assets/projects/power-bi-dashboard-cover.png"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Cover Image
-                </a>
+              <div class="project-body">
+                <p class="project-tag">Power BI Dashboard</p>
+                <h3>Dashboard Data PBIX</h3>
+                <p>
+                  Added the Power BI dashboard file you shared, together with a hosted preview
+                  cover image.
+                </p>
+                <ul class="project-meta">
+                  <li>Power BI</li>
+                  <li>BI File</li>
+                  <li>Dashboard</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="project-link" href="./assets/projects/power-bi-dashboard.pbix" target="_blank" rel="noreferrer">Open PBIX</a>
+                  <a class="project-link" href="./assets/projects/power-bi-dashboard-cover.png" target="_blank" rel="noreferrer">Open Cover</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <img
+                class="project-image"
+                src="./assets/certificates/cdp-certificate.png"
+                alt="CDP certificate preview"
+              />
+              <div class="project-body">
+                <p class="project-tag">Campaign Presentation</p>
+                <h3>Ek Kadam CDP Work</h3>
+                <p>
+                  Switched this entry to your PowerPoint file as requested, and paired it with the
+                  certificate image instead of the previous PDF-based entry.
+                </p>
+                <ul class="project-meta">
+                  <li>PPTX</li>
+                  <li>Campaign Work</li>
+                  <li>Certificate Included</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="project-link" href="./assets/projects/yogesh-cdp-ek-kadam.pptx" target="_blank" rel="noreferrer">Open PPTX</a>
+                  <a class="project-link" href="./assets/certificates/cdp-certificate.png" target="_blank" rel="noreferrer">Open Certificate</a>
+                </div>
               </div>
             </article>
           </div>
@@ -363,163 +368,63 @@
         <section class="section" id="certificates">
           <div class="section-heading reveal">
             <p class="eyebrow">Certificates</p>
-            <h2>Openable proof and downloadable records.</h2>
+            <h2>Hosted certificate previews with direct open links.</h2>
           </div>
 
           <div class="certificate-grid">
             <article class="certificate-card reveal">
-              <img
-                class="certificate-image"
-                src="./assets/certificates/1stop-artificial-intelligence-certificate.png"
-                alt="1Stop internship certificate"
-              />
+              <img class="certificate-image" src="./assets/certificates/1stop-artificial-intelligence-certificate.png" alt="1Stop certificate" />
               <h3>1Stop Artificial Intelligence Internship</h3>
-              <p>Internship certificate dated April 8, 2024.</p>
+              <p>Certificate dated April 8, 2024 with direct open and verification access.</p>
               <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="./assets/certificates/1stop-artificial-intelligence-certificate.png"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Certificate
-                </a>
-                <a
-                  class="project-link"
-                  href="https://1stop.ai/verify-certificate"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Verify Link
-                </a>
+                <a class="project-link" href="./assets/certificates/1stop-artificial-intelligence-certificate.png" target="_blank" rel="noreferrer">Open Certificate</a>
+                <a class="project-link" href="https://1stop.ai/verify-certificate" target="_blank" rel="noreferrer">Verify</a>
               </div>
             </article>
 
             <article class="certificate-card reveal">
-              <img
-                class="certificate-image"
-                src="./assets/certificates/neo-certificate.png"
-                alt="Neo colab certificate"
-              />
+              <img class="certificate-image" src="./assets/certificates/neo-certificate.png" alt="Neo certificate" />
               <h3>Neo Colab Certificate of Completion</h3>
               <p>Computer Programming course certificate issued on May 16, 2024.</p>
               <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="./assets/certificates/neo-certificate.png"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Certificate
-                </a>
+                <a class="project-link" href="./assets/certificates/neo-certificate.png" target="_blank" rel="noreferrer">Open Certificate</a>
               </div>
             </article>
 
             <article class="certificate-card reveal">
-              <div class="certificate-file-card">
-                <p class="preview-kicker">Hosted PDF</p>
-                <h3>Plantation Campaign Appreciation Certificate</h3>
-                <p>
-                  Appreciation certificate hosted from your local file and added in place of the
-                  wrong PDF.
-                </p>
-              </div>
+              <img class="certificate-image" src="./assets/certificates/cdp-certificate.png" alt="CDP certificate" />
+              <h3>Plantation Campaign Certificate of Appreciation</h3>
+              <p>Certificate paired with your campaign entry and now hosted as an image preview.</p>
               <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="./assets/certificates/plantation-campaign-certificate.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Certificate PDF
-                </a>
+                <a class="project-link" href="./assets/certificates/cdp-certificate.png" target="_blank" rel="noreferrer">Open Certificate</a>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="section dual-section">
-          <div class="mini-panel reveal">
-            <p class="eyebrow">Achievements</p>
-            <h2>Consistency and progress</h2>
-            <ul class="list">
-              <li>50 Days Badge in LeetCode during 2025</li>
-              <li>Contributor badges in GeeksforGeeks</li>
-              <li>Built portfolio-ready dashboards and project demos</li>
-            </ul>
-          </div>
-
-          <div class="mini-panel reveal">
+        <section class="section split-panels">
+          <article class="spotlight-card reveal">
             <p class="eyebrow">Resume</p>
-            <h2>Open or download directly</h2>
-            <ul class="list">
-              <li>
-                <a
-                  class="inline-link"
-                  href="./assets/resume/yogesh-malik-resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Resume PDF
-                </a>
-              </li>
-              <li>Includes education, skills, internship history, and contact details</li>
-              <li>Hosted inside the live portfolio for easy sharing</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section education-section">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Education</p>
-            <h2>Academic foundation and current performance.</h2>
-          </div>
-
-          <div class="education-grid">
-            <article class="edu-card reveal">
-              <span>Since August 2023</span>
-              <h3>Lovely Professional University</h3>
-              <p>B.Tech in Computer Science and Engineering</p>
-              <strong>CGPA: 7.0</strong>
-            </article>
-            <article class="edu-card reveal">
-              <span>April 2021 - March 2022</span>
-              <h3>Pathania Public School, Rohtak</h3>
-              <p>Intermediate</p>
-              <strong>75%</strong>
-            </article>
-            <article class="edu-card reveal">
-              <span>April 2019 - March 2020</span>
-              <h3>Pathania Public School, Rohtak</h3>
-              <p>Matriculation</p>
-              <strong>92.2%</strong>
-            </article>
-          </div>
-        </section>
-
-        <section class="section contact-section" id="contact">
-          <div class="contact-copy reveal">
-            <p class="eyebrow">Contact</p>
-            <h2>Every important link now opens directly.</h2>
+            <h2>Open instantly from the live site.</h2>
             <p>
-              Use the links below to open my email, call directly, visit my GitHub and LinkedIn,
-              or view my resume file from the live site.
+              Your resume is hosted directly inside the portfolio for faster review by recruiters
+              and easier sharing in applications.
             </p>
-          </div>
+            <div class="project-actions">
+              <a class="project-link" href="./assets/resume/yogesh-malik-resume.pdf" target="_blank" rel="noreferrer">Open Resume PDF</a>
+            </div>
+          </article>
 
-          <div class="contact-card reveal">
-            <a href="mailto:ym822963@gmail.com">ym822963@gmail.com</a>
-            <a href="tel:+918307607339">+91 8307607339</a>
-            <a href="https://www.linkedin.com/in/yogesh-malik-5118972a7" target="_blank" rel="noreferrer">
-              Open LinkedIn
-            </a>
-            <a href="https://github.com/Yogesh-techfield" target="_blank" rel="noreferrer">
-              Open GitHub
-            </a>
-            <a href="./assets/resume/yogesh-malik-resume.pdf" target="_blank" rel="noreferrer">
-              Open Resume
-            </a>
-          </div>
+          <article class="spotlight-card reveal" id="contact">
+            <p class="eyebrow">Contact</p>
+            <h2>Everything important is one click away.</h2>
+            <div class="contact-stack">
+              <a href="mailto:ym822963@gmail.com">ym822963@gmail.com</a>
+              <a href="tel:+918307607339">+91 8307607339</a>
+              <a href="https://www.linkedin.com/in/yogesh-malik-5118972a7" target="_blank" rel="noreferrer">Open LinkedIn</a>
+              <a href="https://github.com/Yogesh-techfield" target="_blank" rel="noreferrer">Open GitHub</a>
+            </div>
+          </article>
         </section>
       </main>
     </div>

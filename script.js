@@ -5,6 +5,8 @@ const revealItems = [...document.querySelectorAll(".reveal")];
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
+const skillTabs = [...document.querySelectorAll(".skill-tab")];
+const skillPanels = [...document.querySelectorAll(".skill-panel")];
 
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
@@ -18,6 +20,20 @@ if (menuToggle && nav) {
   });
 }
 
+skillTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = tab.dataset.tab;
+
+    skillTabs.forEach((item) => {
+      item.classList.toggle("is-active", item === tab);
+    });
+
+    skillPanels.forEach((panel) => {
+      panel.classList.toggle("is-active", panel.dataset.panel === target);
+    });
+  });
+});
+
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -27,18 +43,20 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.2 }
+  { threshold: 0.16 }
 );
 
 revealItems.forEach((item, index) => {
-  item.style.transitionDelay = `${Math.min(index * 45, 280)}ms`;
+  item.style.transitionDelay = `${Math.min(index * 45, 260)}ms`;
   revealObserver.observe(item);
 });
 
 const sectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
+      if (!entry.isIntersecting) {
+        return;
+      }
 
       navLinks.forEach((link) => {
         const isMatch = link.getAttribute("href") === `#${entry.target.id}`;
@@ -48,7 +66,7 @@ const sectionObserver = new IntersectionObserver(
   },
   {
     threshold: 0.45,
-    rootMargin: "-20% 0px -30% 0px",
+    rootMargin: "-18% 0px -30% 0px",
   }
 );
 
