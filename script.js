@@ -5,8 +5,6 @@ const revealItems = [...document.querySelectorAll(".reveal")];
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
-const skillTabs = [...document.querySelectorAll(".skill-tab")];
-const skillPanels = [...document.querySelectorAll(".skill-panel")];
 
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
@@ -19,20 +17,6 @@ if (menuToggle && nav) {
     });
   });
 }
-
-skillTabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const target = tab.dataset.tab;
-
-    skillTabs.forEach((item) => {
-      item.classList.toggle("is-active", item === tab);
-    });
-
-    skillPanels.forEach((panel) => {
-      panel.classList.toggle("is-active", panel.dataset.panel === target);
-    });
-  });
-});
 
 const revealObserver = new IntersectionObserver(
   (entries) => {

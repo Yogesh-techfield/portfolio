@@ -200,7 +200,6 @@ img {
 .hero-text,
 .spotlight-card p,
 .project-body p,
-.skill-panel p,
 .timeline-card p,
 .certificate-card p {
   color: var(--muted);
@@ -226,8 +225,7 @@ img {
 
 .button,
 .pill-link,
-.project-link,
-.skill-tab {
+.project-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -247,8 +245,7 @@ img {
 
 .button:hover,
 .pill-link:hover,
-.project-link:hover,
-.skill-tab:hover {
+.project-link:hover {
   transform: translateY(-2px);
 }
 
@@ -260,8 +257,7 @@ img {
 
 .button-secondary:hover,
 .pill-link:hover,
-.project-link:hover,
-.skill-tab.is-active {
+.project-link:hover {
   border-color: rgba(89, 212, 255, 0.35);
   background: rgba(89, 212, 255, 0.12);
 }
@@ -281,10 +277,10 @@ img {
 .hero-metrics article,
 .spotlight-card,
 .profile-card,
-.skill-panel,
 .timeline-card,
 .project-card,
-.certificate-card {
+.certificate-card,
+.skill-progress-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
@@ -390,37 +386,50 @@ img {
   padding: 22px;
 }
 
-.skill-tabs {
+.skills-progress-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.skill-progress-card {
+  padding: 22px 20px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.skill-top {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
-.skill-panels {
+.skill-top h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.skill-top span {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.progress-track {
   position: relative;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
 }
 
-.skill-panel {
-  display: none;
-  padding: 24px;
-  background: var(--surface-soft);
-}
-
-.skill-panel.is-active {
+.progress-track span {
   display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7a6be7, #8e7cf2);
 }
 
-.chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-  margin: 18px 0 0;
-}
-
-.chip-row li,
 .project-meta li {
   padding: 10px 14px;
   border-radius: 999px;
@@ -483,8 +492,7 @@ img {
 }
 
 .project-body h3,
-.certificate-card h3,
-.skill-panel h3 {
+.certificate-card h3 {
   margin-top: 10px;
   margin-bottom: 12px;
   font-size: 1.35rem;
@@ -549,6 +557,7 @@ img {
   .split-panels,
   .projects-grid,
   .certificate-grid,
+  .skills-progress-grid,
   .hobbies-grid {
     grid-template-columns: 1fr;
   }
@@ -599,7 +608,7 @@ img {
   .certificate-card,
   .project-body,
   .project-art,
-  .skill-panel,
+  .skill-progress-card,
   .skills-shell {
     padding: 20px;
   }
