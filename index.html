@@ -1,33 +1,312 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yogesh Malik | Full Stack Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Yogesh Malik - Full Stack Web Developer specializing in React, Node.js, and modern web technologies.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <!-- TODO: Update og:title to match your application name -->
-    
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d6cf0ef8-a5b6-4256-ab0d-b10719ceaade/id-preview-52df081d--3bb4e1c5-899d-416f-8c05-8dee72dc72a7.lovable.app-1772870510000.png">
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d6cf0ef8-a5b6-4256-ab0d-b10719ceaade/id-preview-52df081d--3bb4e1c5-899d-416f-8c05-8dee72dc72a7.lovable.app-1772870510000.png">
-    <meta property="og:title" content="Yogesh Malik | Full Stack Developer Portfolio">
-  <meta name="twitter:title" content="Yogesh Malik | Full Stack Developer Portfolio">
-  <meta property="og:description" content="Portfolio of Yogesh Malik - Full Stack Web Developer specializing in React, Node.js, and modern web technologies.">
-  <meta name="twitter:description" content="Portfolio of Yogesh Malik - Full Stack Web Developer specializing in React, Node.js, and modern web technologies.">
-</head>
-
+    <title>Yogesh Malik | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Yogesh Malik, a computer science student focused on full-stack development, data dashboards, and practical AI projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">
+          <span class="brand-mark">YM</span>
+          <span class="brand-copy">
+            <strong>Yogesh Malik</strong>
+            <small>Portfolio</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="home">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Computer Science Student • Full-Stack Learner • Problem Solver</p>
+            <h1>Building practical web and data projects with a sharp eye for usability.</h1>
+            <p class="hero-text">
+              I’m Yogesh Malik, a B.Tech CSE student at Lovely Professional University. I enjoy
+              turning ideas into working products, from responsive websites to dashboards and AI
+              experiments that solve real problems.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View Projects</a>
+              <a class="button button-secondary" href="mailto:ym822963@gmail.com">Hire Me</a>
+            </div>
+
+            <ul class="hero-stats">
+              <li>
+                <strong>2</strong>
+                <span>Internships</span>
+              </li>
+              <li>
+                <strong>3+</strong>
+                <span>Key Projects</span>
+              </li>
+              <li>
+                <strong>50+</strong>
+                <span>LeetCode Streak</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="portrait-frame">
+              <img src="./profile-avatar.svg" alt="Illustrated portrait placeholder for Yogesh Malik" />
+            </div>
+            <div class="profile-quick">
+              <div>
+                <p class="quick-label">Location</p>
+                <p>Punjab, India</p>
+              </div>
+              <div>
+                <p class="quick-label">Phone</p>
+                <p><a href="tel:+918307607339">+91 8307607339</a></p>
+              </div>
+              <div>
+                <p class="quick-label">Focus</p>
+                <p>Full-Stack Web Development & Data Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section about-grid" id="about">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About Me</p>
+            <h2>Learning fast, building consistently, and aiming for strong product thinking.</h2>
+          </div>
+
+          <div class="about-card reveal">
+            <p>
+              I am currently pursuing my Bachelor of Technology in Computer Science and
+              Engineering at Lovely Professional University with a CGPA of 7.0. My work so far
+              spans full-stack development, dashboards in Excel, and applied AI projects using
+              computer vision tools.
+            </p>
+            <p>
+              I like projects that combine logic, design, and real utility. Whether it is a
+              product store website, an expense tracker, or a face recognition system, I focus on
+              creating solutions that are clear, responsive, and useful.
+            </p>
+          </div>
+
+          <div class="highlight-card reveal">
+            <p class="card-title">Core Snapshot</p>
+            <ul class="list">
+              <li>Open to internships and entry-level software roles</li>
+              <li>Comfortable with web, data visualization, and AI tooling</li>
+              <li>Interested in building polished interfaces with practical backend logic</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools and technologies I actively use in projects.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>Languages</h3>
+              <p>C++, JavaScript, C, Python, Java</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Frontend & Data</h3>
+              <p>HTML, CSS, NumPy, Pandas, Matplotlib, Seaborn</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Platforms & Tools</h3>
+              <p>Power BI, Excel, MySQL, Node.js, Tableau</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Strengths</h3>
+              <p>Problem Solving, Teamwork, Critical Thinking, Practical Project Delivery</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section timeline-section" id="experience">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Hands-on internships that shaped my development approach.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-card reveal">
+              <span class="timeline-date">July 2025 - September 2025</span>
+              <h3>Sparkiit.net Private Limited</h3>
+              <p class="timeline-role">Full Stack Web Development Intern</p>
+              <p>
+                Worked on a personal expense tracker that records spending, organizes entries,
+                and displays visual summaries. The project explored both local and cloud-friendly
+                storage patterns.
+              </p>
+              <p class="timeline-stack">
+                Python, C++, Java, Node.js, HTML, CSS, JavaScript, MySQL
+              </p>
+            </article>
+
+            <article class="timeline-card reveal">
+              <span class="timeline-date">August 2024 - September 2024</span>
+              <h3>1Stop Private Limited</h3>
+              <p class="timeline-role">AI Intern</p>
+              <p>
+                Built a real-time face recognition and expression detection system using live
+                webcam input, with support for emotion tracking like happy, sad, and angry.
+              </p>
+              <p class="timeline-stack">MediaPipe, OpenCV, Pynput</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work across dashboards, ecommerce, and applied AI.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-tag">Dashboard</div>
+              <h3>Amazon Sales Dashboard</h3>
+              <p>
+                Built an interactive Amazon-style sales dashboard in Microsoft Excel with dynamic
+                charts and pivot tables to monitor performance metrics and sales trends.
+              </p>
+              <ul class="project-meta">
+                <li>Aug 2023 - Sep 2023</li>
+                <li>Excel, Tableau</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-tag">Web App</div>
+              <h3>Farm Based Product Store Website</h3>
+              <p>
+                Designed and developed a responsive ecommerce-style website for farm-based
+                products with a clean interface and a smooth browsing experience across devices.
+              </p>
+              <ul class="project-meta">
+                <li>July 2023 - Aug 2023</li>
+                <li>HTML, CSS, JavaScript</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal accent-card">
+              <div class="project-tag">AI Project</div>
+              <h3>Real-Time Face Recognition System</h3>
+              <p>
+                Captured live video input and detected facial expressions in real time using
+                computer vision tooling, combining practical AI concepts with a user-facing setup.
+              </p>
+              <ul class="project-meta">
+                <li>Internship Project</li>
+                <li>MediaPipe, OpenCV, Pynput</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section dual-section">
+          <div class="mini-panel reveal">
+            <p class="eyebrow">Certificates</p>
+            <h2>Learning milestones</h2>
+            <ul class="list">
+              <li>Backend Web Development using Express and Node.js</li>
+              <li>CyberSec Symposium for Cyber Security</li>
+              <li>Microlearning in Python for Data Science</li>
+              <li>Project Management Assessment certificate from LearnTube</li>
+            </ul>
+          </div>
+
+          <div class="mini-panel reveal">
+            <p class="eyebrow">Achievements</p>
+            <h2>Progress through consistency</h2>
+            <ul class="list">
+              <li>50 Days Badge in LeetCode during 2025</li>
+              <li>Contributor badges in GeeksforGeeks</li>
+              <li>Built academic and internship projects across web and AI</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section education-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Education</p>
+            <h2>Academic foundation and recent performance.</h2>
+          </div>
+
+          <div class="education-grid">
+            <article class="edu-card reveal">
+              <span>Since August 2023</span>
+              <h3>Lovely Professional University</h3>
+              <p>B.Tech in Computer Science and Engineering</p>
+              <strong>CGPA: 7.0</strong>
+            </article>
+            <article class="edu-card reveal">
+              <span>April 2021 - March 2022</span>
+              <h3>Pathania Public School, Rohtak</h3>
+              <p>Intermediate</p>
+              <strong>75%</strong>
+            </article>
+            <article class="edu-card reveal">
+              <span>April 2019 - March 2020</span>
+              <h3>Pathania Public School, Rohtak</h3>
+              <p>Matriculation</p>
+              <strong>92.2%</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something useful together.</h2>
+            <p>
+              I’m open to internships, collaborative projects, and software opportunities where I
+              can keep learning while contributing strong execution.
+            </p>
+          </div>
+
+          <div class="contact-card reveal">
+            <a href="mailto:ym822963@gmail.com">ym822963@gmail.com</a>
+            <a href="tel:+918307607339">+91 8307607339</a>
+            <a href="https://www.linkedin.com/in/yogesh-malik-5118972a7" target="_blank" rel="noreferrer">
+              LinkedIn Profile
+            </a>
+            <a href="https://github.com/Yogesh-techfield" target="_blank" rel="noreferrer">
+              GitHub Profile
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
